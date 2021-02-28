@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!---------------------------- Creating the Container (i.e what's going to hold all the contents in the homepage) ---------------------------->
+
+
+    <div class="container">
+        <!------------ Creating the Header --------------->
+        <header>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.jpg" alt="logo">
+                </a>
+            </div>
+            <!-- Search Bar -->
+            <div class="search">
+                <form>
+                    <input type="search" name="s" placeholder="Search site...">
+                    <input type="submit" value="Search" placeholder="Search site...">
+                </form>
+            </div>
+
+            <!-- Stopping the logo and search bar from floating (Make sure to define "clear: both" for the clearfix class in the css file i.e ) -->
+            <div class="clearfix"></div>
+
+            <!-- Navigation Bar -->
+            <nav class="main-menu">
+                <ul>
+                    <li> <a href="index.html">Home</a>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a>
+                            <ul class="drop">
+                                <li><a href="services/service-one.html">Data Analysis and Reporting</a></li>
+                                <li><a href="services/service-two.html">Database Management</a></li>
+                                <li><a href="services/service-three.html">Statistical Modellng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!------------- Adding Content ------------------- -->
+        <section class="content-holder">
+            <article class="content">
+                <main>
+                    <h1>Who are we?</h1>
+                    <p>
+                        We are a group of pragmatic indivduals who share one goal:
+                        <b>Being on the right side in the oncoming revolution.</b>
+                    </p>
+                    <img src="images/MI Team 2.jpg" alt="About us">
+                    <p>
+                        The 4th industrial revolution has started!! And guess what is the main driver? <b>Data!!!</b> Yes data is the oil that will drive the inevitable revolution that is here with us. Book your ticket for the train ride now,so that you
+                        won't be left behind.
+                    </p>
+                </main>
+            </article>
+            <!------------------ Side Bar --------------------->
+            <aside class="sidebar">
+                <div>
+                    <h3>Widget</h3>
+                    <ul>
+                        <li><a href="#">2018</a></li>
+                        <li><a href="#">2019</a></li>
+                        <li><a href="#">2020</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+
+        <!------------- Preventing thesidebar and footer from overlapping --------------->
+
+        <div class="clearfix"></div>
+
+        <!---------------------- Footer ------------------------------>
+        <footer class="footer-main">
+            <div class="footer-box">
+                <h3>Footer Menu</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Footer Menu</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Footer Menu</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div class="footer-box">
+            <address>
+                <h3>Company Address</h3>
+                <p>#100, Someplace, Somewhere far, 12334</p>
+                <p>Email: <a href="mailto:contact@someone.com">contact@someone.com</a></p>
+                <p>Phone: <a href="tel:1234567890"1234567890>1234567890</a></p>
+            </address>
+            <!-- <div class="clearfix"></div> -->
+        </footer>
+
+        <!----------------- Copyright ---------------->
+        <div class="copy">
+            <p><small>Copyright &copy; 2020. All Rights Reserved</small></p>
+        </div>
+
+    </div>
+
+    <!--------------- To allow for Slideshows in the Banner (Found by seraching Jquery plugin 2 in google, then going to Getting started.--------------->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+</body>
+
+</html>
+
+</html>

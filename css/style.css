@@ -1,0 +1,323 @@
+/*------------ Changing Margin and background color of the body -------------  */
+
+body {
+    margin: 0 auto;
+    background-color: gainsboro;
+}
+
+
+/* ---------- Specifying the area,background of the container, and placing in the middle of the page---------- */
+
+.container {
+    max-width: 1000px;
+    height: auto;
+    background-color: white;
+    margin: auto;
+}
+
+
+/*------------------- Making Images to Fit the container width--------------------------- */
+
+.container img {
+    width: 100%;
+    height: 380;
+}
+
+
+/* ---------- Positioning the logo to the right, search bar to the left, and stopping both of them from floating------------ */
+
+.logo {
+    float: left;
+    padding: 15px;
+}
+
+.search {
+    float: right;
+    padding: 15px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* ------------- Modifying the Navigation Bar--------------- */
+
+
+/* Changing background color*/
+
+.main-menu {
+    background-color: teal;
+}
+
+
+/* Reducing spaces around the list and removing the bullets */
+
+.main-menu>ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+
+/* Collpasing the list into one, and increasing the spacing */
+
+.main-menu>ul>li {
+    display: inline-block;
+}
+
+
+/* Changing the text color, increasing spaces and changing font of the collapsed elements */
+
+.main-menu>ul>li>a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    ;
+}
+
+
+/* Changing the background color when you hover over the elements */
+
+.main-menu>ul>li>a:hover {
+    background-color: orange;
+}
+
+
+/* Adding a drop down to the service menu item and styling */
+
+.drop {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    display: none;
+    z-index: 999;
+}
+
+.drop>li {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    background-color: linen;
+}
+
+.drop>li>a:hover {
+    background-color: orange;
+}
+
+.main-menu>ul>li:hover .drop {
+    display: block;
+}
+
+
+/*-------------------Banner-Creating Slideshow--------------------- */
+
+.banner {
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+}
+
+
+/* Go to Jquery plugin, copy the two lines with tags at the top of the page contents and paste it in the footer section of the html file, then add the cycle class in the banner tag (as indicated in the webiste). You can also paste additional setting as indicated in the website */
+
+
+/* Add  z-index: 999; in the .drop to  give priority to give priority to the menu dropdown*/
+
+
+/*-------------- Styling the Content Holder  --------------------*/
+
+.content-holder {
+    background-color: rgb(143, 174, 188);
+    height: auto;
+}
+
+
+/* Main content - adjusting the dimensions and spaces (70% of total page width), fonts and changing background color, changing its position to the left */
+
+.content {
+    width: 700px;
+    height: auto;
+    padding: 25px;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+}
+
+.content h1 {
+    font-size: 1.5em;
+    /* margin: 10px; */
+}
+
+.content p {
+    font-size: small;
+}
+
+
+/*Sidebar - adjusting the padding, fonts , removing bullets, increasing spaces between list*/
+
+.sidebar {
+    float: left;
+    padding: 25px;
+}
+
+.sidebar h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.sidebar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.sidebar ul>li {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+/* ----------------- Styling the Footer ------------------- */
+
+
+/*Main Footer - Styling footer section, and changing area (Width is 950 because padding is 25 both sides, summing to an area of 1000 which is the container width */
+
+.footer-main {
+    background-color: black;
+    color: white;
+    width: 950px;
+    padding: 25px;
+}
+
+
+/*  Footer boxes Changing width (Width is 950/4 i.e Total footer area/Number of boxes), placing them horizontally */
+
+.footer-box {
+    width: 237.5px;
+    height: auto;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Footer boxes Lists - removing  bullets, styling the list element */
+
+.footer-box>ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+
+/* Footer boxes list elements - changing fonts, changing magin, removing underlines  */
+
+.footer-box>ul>li>a {
+    display: inline-block;
+    font-size: small;
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Footer box company details - changing font and color */
+
+address p {
+    font-size: small;
+}
+
+address a {
+    color: teal;
+    font-size: small;
+}
+
+
+/* Copyright - changing font, paddding, position */
+
+.copy {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: crimson;
+    padding: 10px;
+    color: white;
+}
+
+.copy p {
+    margin: 0px;
+}
+
+
+/* ------------------ Products Page --------------------- */
+
+
+/* Fitting the products to one line, and increasing spaces between them */
+
+.product {
+    width: 211.33px;
+    height: auto;
+    float: left;
+    /* border: 1px solid black; */
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* Changing caption to bold */
+
+.product-caption p {
+    font-weight: bold;
+}
+
+
+/* Changing Previous price color to red */
+
+.product-caption del {
+    color: red;
+}
+
+
+/* Changing Current price color to green */
+
+.product-caption ins {
+    color: green;
+}
+
+
+/* Styling the Buy Now bit  */
+
+.product-caption a {
+    display: block;
+    background-color: teal;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    text-decoration: none;
+}
+
+
+/* Changing color of Buy Now bit when the mouse cursor hovers */
+
+.product-caption a:hover {
+    background-color: orange;
+}
+
+
+/*------------------------------ Contact Page ---------------------------*/
+
+.banner iframe {
+    width: 100%;
+    height: 444px;
+}
